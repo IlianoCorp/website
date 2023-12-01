@@ -1,0 +1,457 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 0 0% 100%;
+    --foreground: 222.2 84% 4.9%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 222.2 84% 4.9%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 222.2 84% 4.9%;
+
+    --primary: 222.2 47.4% 11.2%;
+    --primary-foreground: 210 40% 98%;
+
+    --secondary: 210 40% 96.1%;
+    --secondary-foreground: 222.2 47.4% 11.2%;
+
+    --muted: 210 40% 96.1%;
+    --muted-foreground: 215.4 16.3% 46.9%;
+
+    --accent: 210 40% 96.1%;
+    --accent-foreground: 222.2 47.4% 11.2%;
+
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 210 40% 98%;
+
+    --border: 214.3 31.8% 91.4%;
+    --input: 214.3 31.8% 91.4%;
+    --ring: 222.2 84% 4.9%;
+
+    --radius: 0.5rem;
+  }
+
+  .dark {
+    --background: 222.2 84% 4.9%;
+    --foreground: 210 40% 98%;
+
+    --card: 222.2 84% 4.9%;
+    --card-foreground: 210 40% 98%;
+
+    --popover: 222.2 84% 4.9%;
+    --popover-foreground: 210 40% 98%;
+
+    --primary: 210 40% 98%;
+    --primary-foreground: 222.2 47.4% 11.2%;
+
+    --secondary: 217.2 32.6% 17.5%;
+    --secondary-foreground: 210 40% 98%;
+
+    --muted: 217.2 32.6% 17.5%;
+    --muted-foreground: 215 20.2% 65.1%;
+
+    --accent: 217.2 32.6% 17.5%;
+    --accent-foreground: 210 40% 98%;
+
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 210 40% 98%;
+
+    --border: 217.2 32.6% 17.5%;
+    --input: 217.2 32.6% 17.5%;
+    --ring: 212.7 26.8% 83.9%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+  }
+}
+
+.hero {
+  background: url(../svgs/Group2.svg), url(../svgs/grad-hero.svg);
+  background-repeat: no-repeat;
+  background-size: 40%, 30%;
+  background-position: 0 0, top right;
+}
+
+.quote {
+  background: url(../svgs/Group2.svg), url(../svgs/Looper-3.svg),
+    url(../svgs/star-img.svg), url(../svgs/star-img.svg);
+  background-repeat: no-repeat;
+  background-size: 40%, 50%, 5%, 3%;
+  background-position: 0 0, top right, 1rem 30rem, 5rem 28rem;
+  background-color: #101010;
+}
+
+.features {
+  background: url(../svgs/circles.svg);
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-position: 0 5rem, top left;
+}
+
+.star {
+  background: url(../svgs/star-img.svg);
+  background-repeat: no-repeat;
+  background-size: 0px;
+  background-position: 0 0, top right;
+}
+
+.star2 {
+  background: url(../svgs/star-img.svg);
+  background-repeat: no-repeat;
+  background-size: 0px;
+  background-position: 3rem 10rem, top left;
+}
+
+@media (max-width: 600px) {
+  .hero {
+    background: url(../svgs/Group2.svg), url(../svgs/grad-hero.svg);
+    background-repeat: no-repeat;
+    background-size: 80%, 60%;
+    background-position: 0 0, bottom right;
+  }
+
+  .star {
+    background: url(../svgs/star-img.svg);
+    background-repeat: no-repeat;
+    background-size: 0px;
+    background-position: 2rem 0, top right;
+  }
+
+  .star2 {
+    background: url(../svgs/star-img.svg);
+    background-repeat: no-repeat;
+    background-size: 0px;
+    background-position: 0 9rem, top left;
+  }
+
+  .quote {
+    background: url(../svgs/Group2.svg), url(../svgs/Looper-3.svg),
+      url(../svgs/star-img.svg), url(../svgs/star-img.svg);
+    background-repeat: no-repeat;
+    background-size: 90%, 0%, 10%, 8%;
+    background-position: 0 0, top right, 1rem 34rem, 3rem 32rem;
+    background-color: #101010;
+  }
+  .stroke {
+    background-image: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/664131/underline.svg");
+    background-repeat: no-repeat;
+    background-size: 0%;
+    background-position: 10rem 11rem, top left;
+  }
+}
+
+.deck3 {
+  position: relative;
+  max-width: 500px;
+  width: 100%;
+  margin: 4em auto 3em;
+}
+
+@media (max-width: 705px) {
+  .deck3 {
+    overflow-x: hidden;
+    margin: 4em auto;
+  }
+}
+
+.deck3:before {
+  content: "";
+  position: absolute;
+  width: 120%;
+  height: 95%;
+  top: -1.5em;
+  left: 0em;
+  border-radius: 8px;
+
+  background-size: 100%;
+  background-position: 0rem 40rem;
+}
+
+@media (max-width: 550px) {
+  .deck3:before {
+    left: 1.5em;
+  }
+}
+
+.card3 {
+  position: relative;
+  background-color: #30344c;
+  padding: 1em;
+  z-index: 5;
+  border-radius: 10px;
+  box-shadow: 4px 4px 20px rgba(0, 0, 0, 0.3);
+  transition: 200ms ease-in-out;
+}
+
+.card3 + .card3 {
+  margin-top: 1em;
+}
+
+.card3:hover {
+  z-index: 7;
+  transform: scale(1.05);
+  box-shadow: 0 4px 25px rgba(0, 0, 0, 0.4);
+}
+
+.card3:first-of-type {
+  margin-left: -3em;
+  margin-right: 3em;
+}
+
+@media (max-width: 705px) {
+  .card3:first-of-type {
+    margin-left: -1em;
+    margin-right: 1em;
+  }
+}
+
+@media (max-width: 550px) {
+  .card3:first-of-type {
+    margin: 0;
+  }
+}
+
+.card3:nth-of-type(2) {
+  margin-left: 5em;
+  margin-right: -5em;
+  margin-top: -6em;
+}
+
+@media (max-width: 705px) {
+  .card3:nth-of-type(2) {
+    margin-left: 1em;
+    margin-right: -1em;
+    margin-top: 1em;
+  }
+}
+
+@media (max-width: 550px) {
+  .card3:nth-of-type(2) {
+    margin: 1em 0 0;
+  }
+}
+
+.card3:nth-of-type(3) {
+  margin-top: -2em;
+  margin-left: -1em;
+  margin-right: 1em;
+}
+
+@media (max-width: 705px) {
+  .card3:nth-of-type(3) {
+    margin-left: -1em;
+    margin-right: 1em;
+    margin-top: 1em;
+  }
+
+  .card3:nth-of-type(3):after {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: -1em;
+    display: block;
+    border-bottom: 5px solid rgba(192, 57, 43, 0.6);
+  }
+}
+
+@media (max-width: 550px) {
+  .card3:nth-of-type(3) {
+    margin: 1em 0 0;
+  }
+}
+
+.cardHeader3 {
+  display: grid;
+  grid-template-columns: 36px auto 100px;
+  align-items: center;
+  text-transform: uppercase;
+}
+
+.cardHeader3 .cardHeader_type3 {
+  color: #ffd433;
+  margin: 10px;
+}
+
+.cardHeader3 .cardHeader_account3 {
+  color: #c6e1ed;
+  font-size: 4em;
+  font-weight: 600;
+  letter-spacing: 1px;
+}
+
+.cardHeader3 .cardHeader_date3 {
+  margin: 10px;
+  color: #c6e1ed;
+  font-size: 0.85em;
+  font-weight: 600;
+  text-align: right;
+}
+
+.cardBody3 {
+  display: flex;
+  margin: 0 10px 10px;
+}
+
+.cardBody3 .cardText3 {
+  margin: 0 10px 0 0;
+  white-space: pre-line;
+  color: #c0c3d7;
+  font-weight: 400;
+  line-height: 1.5;
+}
+
+.cardBody3 .cardText3 .cardText_highlight3 {
+  color: #ffe480;
+}
+
+.cardBody3 .cardStats3 {
+  font-size: 0.9em;
+  text-align: right;
+}
+
+.cardBody3 .cardStats3 .cardStats_stat3 {
+  display: inline-block;
+  white-space: nowrap;
+}
+
+.cardBody3 .cardStats3 .cardStats_stat3 + .cardStats_stat3 {
+  margin-top: 5px;
+}
+
+.cardBody3 .cardStats3 .cardStats_stat3.cardStats_stat-likes3 {
+  color: #ffd3d4;
+}
+
+.cardBody3 .cardStats3 .cardStats_stat3.cardStats_stat-retweets3 {
+  color: #b2d9a6;
+}
+
+.cardBody3 .cardStats3 .cardStats_stat3.cardStats_stat-shares3 {
+  color: #d284a3;
+}
+
+.cardBody3 .cardStats3 .cardStats_stat3.cardStats_stat-comments3 {
+  color: #ff9579;
+}
+
+@-webkit-keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+
+  100% {
+    transform: translateX(calc(-250px * 7));
+  }
+}
+
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+
+  100% {
+    transform: translateX(calc(-250px * 7));
+  }
+}
+
+.highlighted-text-shadow {
+  text-shadow:
+      /* regular text-shadow */ 0 0.15ch 15px
+      oklch(25% 0.2 var(--hue)),
+    /* text-shadow highlight */ 0 -2px 0 oklch(98% 0.05 var(--hue));
+}
+
+.outer {
+  background: #b4b4b4;
+  opacity: 0.9;
+  margin: 10px auto;
+  padding: 10px;
+  border-radius: 7px 7px 7px 7px;
+
+  &.dark {
+    background: #273138;
+
+    .dot {
+      background: #4a5c66;
+    }
+  }
+
+  &.yosemite {
+    background: #f6f6f6; /* Old browsers */
+    background: -moz-linear-gradient(
+      top,
+      #f6f6f6 0%,
+      #dadada 100%
+    ); /* FF3.6+ */
+    background: -webkit-gradient(
+      linear,
+      left top,
+      left bottom,
+      color-stop(0%, #f6f6f6),
+      color-stop(100%, #dadada)
+    ); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(
+      top,
+      #f6f6f6 0%,
+      #dadada 100%
+    ); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(
+      top,
+      #f6f6f6 0%,
+      #dadada 100%
+    ); /* Opera 11.10+ */
+    background: -ms-linear-gradient(top, #f6f6f6 0%, #dadada 100%); /* IE10+ */
+    background: linear-gradient(to bottom, #f6f6f6 0%, #dadada 100%); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f6f6f6', endColorstr='#dadada',GradientType=0 ); /* IE6-9 */
+    border: 1px solid #d8d8d8;
+    border-bottom: 1px solid #b4b4b4;
+  }
+}
+
+.dot {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  background: #f9f9f9;
+  border-radius: 50%;
+  margin: 0 4px 0 0;
+
+  &.red {
+    background: #ff6057;
+    border: 1px solid #e14640;
+  }
+
+  &.amber {
+    background: #ffbd2e;
+    border: 1px solid #dfa123;
+  }
+
+  &.green {
+    background: #27c93f;
+    border: 1px solid #1dad2b;
+  }
+}
+
+.stroke {
+  background-image: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/664131/underline.svg");
+  background-repeat: no-repeat;
+  background-size: 60%;
+  background-position: 10rem 11rem, top left;
+}
+
+.fade-in {
+  opacity: 1;
+  transition: opacity 0.5s ease-in-out;
+}
