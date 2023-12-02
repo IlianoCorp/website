@@ -48,6 +48,13 @@ export default function Hero() {
       <div className="flex hero justify-center items-center w-auto mx-auto px-4 sm:px-6 h-screen md:h-[90vh]">
         <div className="star2  pb-12 pt-52">
           <div className="star text-center pb-12 md:pb-16">
+          <motion.div
+              initial={{ opacity: 0, y: 15 }}
+              animate={{ y: 12 }}
+              exit={{ opacity: 0, y: 15 }}
+              transition={{ delay: 0.25 }}
+              whileInView={{ opacity: 1, y: 0 }}
+            >
             <h1
               className="text-3xl md:text-6xl text-transparent bg-gradient-to-t bg-clip-text dark:text-zinc-200 font-extrabold leading-tighter tracking-tighter mb-4"
               data-aos="zoom-y-out"
@@ -70,6 +77,7 @@ export default function Hero() {
                 want it to be
               </span>
             </h1>
+            </motion.div>
             <br />
             <p
               className="text-xl dark:text-zinc-400 text-gray-600 mb-8"

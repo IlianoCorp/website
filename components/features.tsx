@@ -1,4 +1,6 @@
+"use client";
 import star from "../svgs/star-img (1).svg";
+import { motion } from "framer-motion";
 
 export default function Features() {
   return (
@@ -14,66 +16,82 @@ export default function Features() {
           <div className="absolute">
             <img className="w-40" src={star} alt="" />
           </div>
-          <div
-            className="text-3xl md:text-6xl text-transparent bg-gradient-to-t bg-clip-text dark:text-zinc-200 font-extrabold leading-tighter tracking-tighter mb-4"
-            data-aos="zoom-y-out"
+          <motion.div
+            initial={{ opacity: 0, y: 15 }}
+            animate={{ y: 12 }}
+            exit={{ opacity: 0, y: 15 }}
+            transition={{ delay: 0.25 }}
+            whileInView={{ opacity: 1, y: 0 }}
           >
-            <span className=" whitespace-nowrap">
-              <span className=" text-transparent bg-gradient-to-t bg-clip-text from-zinc-500 dark:to-white to-black">
-                The better the{" "}
-                <span className="bg-clip-text text-transparent bg-gradient-to-r from-red-500 to-yellow-400">
-                  website
-                </span>{" "}
-              </span>
-            </span>
-            <br />
-            <span className="text-transparent bg-gradient-to-t bg-clip-text from-zinc-500 dark:to-white to-black">
-              The more{" "}
-              <span className="bg-clip-text text-transparent bg-gradient-to-r from-blue-500 to-teal-400">
-                clients
-              </span>{" "}
-              <br />
-              <span>
-                The more{" "}
-                <span className="bg-clip-text text-transparent bg-gradient-to-r from-yellow-500 to-green-400">
-                  $$$
+            <div
+              className="text-3xl md:text-6xl text-transparent bg-gradient-to-t bg-clip-text dark:text-zinc-200 font-extrabold leading-tighter tracking-tighter mb-4"
+              data-aos="zoom-y-out"
+            >
+              <span className=" whitespace-nowrap">
+                <span className=" text-transparent bg-gradient-to-t bg-clip-text from-zinc-500 dark:to-white to-black">
+                  The better the{" "}
+                  <span className="bg-clip-text text-transparent bg-gradient-to-r from-red-500 to-yellow-400">
+                    website
+                  </span>{" "}
                 </span>
               </span>
-            </span>
-          </div>
+              <br />
+              <span className="text-transparent bg-gradient-to-t bg-clip-text from-zinc-500 dark:to-white to-black">
+                The more{" "}
+                <span className="bg-clip-text text-transparent bg-gradient-to-r from-blue-500 to-teal-400">
+                  clients
+                </span>{" "}
+                <br />
+                <span>
+                  The more{" "}
+                  <span className="bg-clip-text text-transparent bg-gradient-to-r from-yellow-500 to-green-400">
+                    $$$
+                  </span>
+                </span>
+              </span>
+            </div>
+          </motion.div>
         </div>
       </div>
 
       <div className=" flex flex-wrap md:gap-40 justify-center text-31xl text-black-black-100 font-body-14">
         {/*Feature 2*/}
         <div className="flex flex-col items-start justify-center ">
-          <div
-            className="text-3xl md:text-6xl text-transparent bg-gradient-to-t bg-clip-text dark:text-zinc-200 font-extrabold leading-tighter tracking-tighter mb-4"
-            data-aos="zoom-y-out"
+          <motion.div
+            initial={{ opacity: 0, y: 15 }}
+            animate={{ y: 12 }}
+            exit={{ opacity: 0, y: 15 }}
+            transition={{ delay: 0.25 }}
+            whileInView={{ opacity: 1, y: 0 }}
           >
-            <span className=" whitespace-nowrap">
-              <span className=" text-transparent bg-gradient-to-t bg-clip-text from-zinc-500 dark:to-white to-black">
-                The better the{" "}
-                <span className="bg-clip-text text-transparent bg-gradient-to-r from-red-500 to-yellow-400">
-                  website
-                </span>{" "}
-              </span>
-            </span>
-            <br />
-            <span className="text-transparent bg-gradient-to-t bg-clip-text from-zinc-500 dark:to-white to-black">
-              The more{" "}
-              <span className="bg-clip-text text-transparent bg-gradient-to-r from-blue-500 to-teal-400">
-                clients
-              </span>{" "}
-              <br />
-              <span>
-                The more{" "}
-                <span className="bg-clip-text text-transparent bg-gradient-to-r from-yellow-500 to-green-400">
-                  $$$
+            <div
+              className="text-3xl md:text-6xl text-transparent bg-gradient-to-t bg-clip-text dark:text-zinc-200 font-extrabold leading-tighter tracking-tighter mb-4"
+              data-aos="zoom-y-out"
+            >
+              <span className=" whitespace-nowrap">
+                <span className=" text-transparent bg-gradient-to-t bg-clip-text from-zinc-500 dark:to-white to-black">
+                  The better the{" "}
+                  <span className="bg-clip-text text-transparent bg-gradient-to-r from-red-500 to-yellow-400">
+                    website
+                  </span>{" "}
                 </span>
               </span>
-            </span>
-          </div>
+              <br />
+              <span className="text-transparent bg-gradient-to-t bg-clip-text from-zinc-500 dark:to-white to-black">
+                The more{" "}
+                <span className="bg-clip-text text-transparent bg-gradient-to-r from-blue-500 to-teal-400">
+                  clients
+                </span>{" "}
+                <br />
+                <span>
+                  The more{" "}
+                  <span className="bg-clip-text text-transparent bg-gradient-to-r from-yellow-500 to-green-400">
+                    $$$
+                  </span>
+                </span>
+              </span>
+            </div>
+          </motion.div>
         </div>
         <img
           className="mr-30 opacity-90 w-[580px] h-[420px]"

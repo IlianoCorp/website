@@ -2,10 +2,28 @@
 import { useEffect, useState } from "react";
 import { motion, useScroll, useAnimation } from "framer-motion";
 import { useInView } from "react-intersection-observer";
+import Typewriter from "typewriter-effect";
+
+
 
 export default function Quote() {
   const controls = useAnimation();
   const [ref, inView] = useInView();
+
+  const variants = {
+    hidden: { pathLength: 0, opacity: 0 },
+    visible: (i) => {
+      const delay = 1 + i * 0.5;
+      return {
+        pathLength: 1,
+        opacity: 1,
+        transition: {
+          pathLength: { delay, duration: 5.5, },
+          opacity: { delay, duration: 0.2 }
+        }
+      };
+    }
+};
 
   useEffect(() => {
     if (inView) {
@@ -14,7 +32,6 @@ export default function Quote() {
       });
     }
   }, [inView]);
-
   return (
     <main className="quote">
       <link
@@ -28,12 +45,12 @@ export default function Quote() {
           <div className="deck3">
             <motion.img
               src="https://nextui-docs-v2.vercel.app/images/album-cover.png"
-              className="absolute rounded-2xl w-[0px] top-[-1rem] lg:w-auto "
-              alt="Image"
-              ref={ref}
-              animate={controls}
-              initial={{ x: 2, opacity: 0 }}
-              whileInView={{ opacity: 1 }}
+              className="absolute rounded-2xl w-[0px] top-[-3rem] lg:w-auto "
+              initial={{ opacity: 1, x: 0 }}
+              animate="variants"
+              exit={{ opacity: 0, x: 15 }}
+              transition={{pathLength: { duration: 10.5, }, delay: 0.75 }}
+              whileInView={{ opacity: 1, x: 448 }}
             />
 
             <div className="card3">
@@ -53,7 +70,7 @@ export default function Quote() {
           </div>
         </div>
       </div>
-      <div className="flex flex-wrap justify-center lg:justify-between md:justify-center sm:justify-between ">
+      <div className="mac flex flex-wrap justify-center lg:justify-between md:justify-center sm:justify-between ">
         <div className="stroke pb-4 md:pl-10 highlighted-text-shadow text-center md:text-left text-2xl lg:text-6xl md:text-5xl font-extrabold leading-tighter  font-body-14 first-letter">
           <span className=" whitespace-nowrap">
             <span className=" text-transparent bg-gradient-to-t bg-clip-text from-zinc-500 dark:to-white to-black">
@@ -78,15 +95,24 @@ export default function Quote() {
             </span>
           </span>
         </div>
-        <div className="md:pr-24 flex  w-auto text-left  text-black-black-100 font-body-14">
-          <div className="outer yosemite w-auto h-[400px]">
+        <div className="mac md:mr-24  w-auto text-left  text-black-black-100 font-body-14">
+          <div className=" outer yosemite w-[400px] h-[400px]">
             <div className="dot red"></div>
             <div className="dot amber"></div>
             <div className="dot green"></div>
-            <h1 className="px-2 text-3xl text-black font-bold mt-[30%]">
-              See the impact, <br /> Your success, <br /> Powered by our
-              website.{" "}
-            </h1>
+            <div className="px-2 w- text-3xl text-white mt-[30%]">
+              <Typewriter
+                options={{
+                  loop: true,
+                }}
+                onInit={(typewriter) => {
+                  typewriter
+                    .typeString("See the impact, <br /> Your success, <br /> Powered by our website.")
+                    
+                    .start();
+                }}
+              /></div>
+            
           </div>
         </div>
       </div>
