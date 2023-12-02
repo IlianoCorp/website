@@ -90,7 +90,7 @@ export default function Hero() {
               Let&apos;s elevate your coding journey together!
             </p>
             <div className="flex justify-center">
-              <Button color="primary" className="dark:bg-zinc-200" radius="lg">
+              <Button href="https://forms.gle/6CQQE1KXkWqLC6uU6" color="primary" className="dark:bg-zinc-200" radius="lg">
                 GET IN TOUCH
               </Button>
               <Spacer x={4} />
