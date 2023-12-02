@@ -44,7 +44,7 @@ export default function Quote() {
         <div className=" top-[120px] w-[580px] flex flex-col items-start justify-center gap-[32px]">
           <div className="deck3">
             <motion.img
-              src="https://nextui-docs-v2.vercel.app/images/album-cover.png"
+              src="https://static.wikia.nocookie.net/overtier_br/images/6/68/Bruce_lee.png/revision/latest/scale-to-width-down/339?cb=20200524181233&path-prefix=pt-br"
               className="absolute rounded-2xl w-[0px] top-[-3rem] lg:w-auto "
               initial={{ opacity: 1, x: 0 }}
               animate="variants"
