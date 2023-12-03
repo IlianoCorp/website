@@ -457,8 +457,59 @@
 }
 
 @media (max-width:1300px) and (min-width:1024px){
+  .window{
+  }
+  .window .textL{
+    font-size: 2.75rem;
+
+  }
   .mac{
+    margin-top: 100px;
     gap: 2rem;
-    margin-left: 8rem;
+  }
+  .mac .mac1{
+    width: 340px;
+    height: 340px;
+  }
+  .stroke {
+    background-image: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/664131/underline.svg");
+    background-repeat: no-repeat;
+    background-size: 60%;
+    background-position: 10rem 8rem, top left;
+  }
+  .cointext{
+    font-size: 2.15rem;
+  }
+  .sizecoin{
+    width: 200px;
+    height: 200px;
   }
 }
+
+.oder2{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+.oder{
+  order: 2;
+}
+.oder1{
+  order: 1;
+}
+@media (max-width:770px) and (min-width:300px){
+  .oder2{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap-reverse;
+    margin-bottom: 100px;
+  }
+  .oder{
+    order: 1;
+  }
+  .oder1{
+    order: 2;
+  }
+
+}
+

@@ -5,9 +5,9 @@ import { motion } from "framer-motion";
 export default function Features() {
   return (
     <main className="features">
-      <div className="flex flex-wrap md:gap-40 justify-center text-31xl text-black-black-100 font-body-14 mt-10 mb-20">
+      <div className=" flex flex-wrap md:gap-40 justify-center mt-14 mb-20">
         <img
-          className=" opacity-90 md:w-[580px] md:h-[420px]"
+          className="opacity-90 w-[580px] h-[420px] sizecoin "
           alt=""
           src="/images/coin.png"
         />
@@ -24,8 +24,7 @@ export default function Features() {
             whileInView={{ opacity: 1, y: 0 }}
           >
             <div
-              className="text-3xl md:text-6xl text-transparent bg-gradient-to-t bg-clip-text dark:text-zinc-200 font-extrabold leading-tighter tracking-tighter mb-4"
-              data-aos="zoom-y-out"
+              className="cointext text-3xl  text-transparent bg-gradient-to-t bg-clip-text dark:text-zinc-200 font-extrabold leading-tighter tracking-tighter mb-4"
             >
               <span className=" whitespace-nowrap">
                 <span className=" text-transparent bg-gradient-to-t bg-clip-text from-zinc-500 dark:to-white to-black">
@@ -54,9 +53,9 @@ export default function Features() {
         </div>
       </div>
 
-      <div className=" flex flex-wrap md:gap-40 justify-center text-31xl text-black-black-100 font-body-14">
+      <div className="oder2 flex md:flex-wrap md:gap-40 justify-center text-31xl text-black-black-100 font-body-14">
         {/*Feature 2*/}
-        <div className="flex flex-col items-start justify-center ">
+        <div className="flex flex-col items-start sm:order-2 justify-center ">
           <motion.div
             initial={{ opacity: 0, y: 15 }}
             animate={{ y: 12 }}
@@ -65,7 +64,7 @@ export default function Features() {
             whileInView={{ opacity: 1, y: 0 }}
           >
             <div
-              className="text-3xl md:text-6xl text-transparent bg-gradient-to-t bg-clip-text dark:text-zinc-200 font-extrabold leading-tighter tracking-tighter mb-4"
+              className="oder1 cointext text-3xl  text-transparent bg-gradient-to-t bg-clip-text dark:text-zinc-200 font-extrabold leading-tighter tracking-tighter mb-4"
               data-aos="zoom-y-out"
             >
               <span className=" whitespace-nowrap">
@@ -94,7 +93,7 @@ export default function Features() {
           </motion.div>
         </div>
         <img
-          className="mr-30 opacity-90 w-[580px] h-[420px]"
+          className="oder mr-30 opacity-90 w-[580px] h-[420px] sizecoin"
           alt=""
           src="/images/coin.png"
         />

@@ -12,7 +12,7 @@ export default function Quote() {
 
   const variants = {
     hidden: { pathLength: 0, opacity: 0 },
-    visible: (i:any) => {
+    visible: (i: number) => {
       const delay = 1 + i * 0.5;
       return {
         pathLength: 1,
@@ -44,7 +44,7 @@ export default function Quote() {
         <div className=" top-[120px] w-[580px] flex flex-col items-start justify-center gap-[32px]">
           <div className="deck3">
             <motion.img
-              src="https://static.wikia.nocookie.net/overtier_br/images/6/68/Bruce_lee.png/revision/latest/scale-to-width-down/339?cb=20200524181233&path-prefix=pt-br"
+              src="https://nextui-docs-v2.vercel.app/images/album-cover.png"
               className="absolute rounded-2xl w-[0px] top-[-3rem] lg:w-auto "
               initial={{ opacity: 1, x: 0 }}
               animate="variants"
@@ -70,8 +70,8 @@ export default function Quote() {
           </div>
         </div>
       </div>
-      <div className="mac flex flex-wrap justify-center lg:justify-between md:justify-center sm:justify-between ">
-        <div className="stroke pb-4 md:pl-10 highlighted-text-shadow text-center md:text-left text-2xl lg:text-6xl md:text-5xl font-extrabold leading-tighter  font-body-14 first-letter">
+      <div className="window flex flex-wrap justify-center lg:justify-between md:justify-center sm:justify-between ">
+        <div className="textL stroke pb-4 md:pl-10 highlighted-text-shadow text-center md:text-left text-2xl lg:text-6xl md:text-5xl font-extrabold leading-tighter  font-body-14 first-letter">
           <span className=" whitespace-nowrap">
             <span className=" text-transparent bg-gradient-to-t bg-clip-text from-zinc-500 dark:to-white to-black">
               Let us build your{" "}
@@ -95,12 +95,12 @@ export default function Quote() {
             </span>
           </span>
         </div>
-        <div className="mac md:mr-24  w-auto text-left  text-black-black-100 font-body-14">
-          <div className=" outer yosemite w-[400px] h-[400px]">
+        <div className="mac md:mr-4  w-auto text-left  text-black-black-100 font-body-14">
+          <div className="mac1 outer yosemite w-[400px] h-[400px]">
             <div className="dot red"></div>
             <div className="dot amber"></div>
             <div className="dot green"></div>
-            <div className="px-2 w- text-3xl text-white mt-[30%]">
+            <div className="px-2 w- text-3xl text-white mt-[20%]">
               <Typewriter
                 options={{
                   loop: true,

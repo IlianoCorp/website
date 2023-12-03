@@ -11,11 +11,9 @@ export default function Service() {
         <p>Think how much our website made a positive impact</p>
       </div>
       <div className="flex justify-center bg-[#101010] pb-20">
-        <a href="https://forms.gle/6CQQE1KXkWqLC6uU6">
         <Button className="">
           <Mail className="mr-2 h-4 w-4" /> Contact us
         </Button>
-        </a>
       </div>
     </main>
   );

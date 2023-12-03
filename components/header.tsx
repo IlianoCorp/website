@@ -17,7 +17,7 @@ import { Icons } from "@/components/icons";
 export default function Header() {
   const [isMenuOpen, setIsMenuOpen] = React.useState(false);
   const menuItems = [
-    { label: "Work with us", link: "https://forms.gle/6CQQE1KXkWqLC6uU6" },
+    { label: "Work with us", link: "#" },
     { label: "Newsletter", link: "#" },
     { label: "Q & A", link: "#" },
   ];
