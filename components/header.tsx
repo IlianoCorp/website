@@ -18,8 +18,8 @@ export default function Header() {
   const [isMenuOpen, setIsMenuOpen] = React.useState(false);
   const menuItems = [
     { label: "Work with us", link: "https://forms.gle/q3uXoGQfQj9fVuZ38" },
-    { label: "Newsletter", link: "comingsoon.html" },
-    { label: "Q & A", link: "comingsoon.html" },
+    { label: "Newsletter", link: "comingsoon" },
+    { label: "Q & A", link: "comingsoon" },
   ];
 
   return (

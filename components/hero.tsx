@@ -96,7 +96,7 @@ export default function Hero() {
               </Button>
               </a>
               <Spacer x={4} />
-              <a href="comingsoon.html">
+              <a href="comingsoon">
               <Button variant="bordered" radius="lg">
                 VIEW ALL WORKS
               </Button>

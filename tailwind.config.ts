@@ -10,6 +10,14 @@ module.exports = {
     "./src/**/*.{ts,tsx}",
     "./node_modules/@nextui-org/theme/dist/**/*.{js,ts,jsx,tsx}",
   ],
+  rewrites: async () => {
+    return [
+      {
+        source: '/comingsoon',
+        destination: '/comingsoon.html',
+      },
+    ]
+},
   theme: {
     container: {
       center: true,
