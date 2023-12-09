@@ -17,9 +17,9 @@ import { Icons } from "@/components/icons";
 export default function Header() {
   const [isMenuOpen, setIsMenuOpen] = React.useState(false);
   const menuItems = [
-    { label: "Work with us", link: "#" },
-    { label: "Newsletter", link: "#" },
-    { label: "Q & A", link: "#" },
+    { label: "Work with us", link: "https://forms.gle/q3uXoGQfQj9fVuZ38" },
+    { label: "Newsletter", link: "comingsoon.html" },
+    { label: "Q & A", link: "comingsoon.html" },
   ];
 
   return (
@@ -41,17 +41,17 @@ export default function Header() {
 
       <NavbarContent className="hidden sm:flex gap-8" justify="center">
         <NavbarItem>
-          <Link color="foreground" href="#">
+          <Link color="foreground" href="https://forms.gle/q3uXoGQfQj9fVuZ38">
             Work with us
           </Link>
         </NavbarItem>
         <NavbarItem>
-          <Link href="#" aria-current="page">
+          <Link href="comingsoon.html" aria-current="page">
             Newsletter
           </Link>
         </NavbarItem>
         <NavbarItem>
-          <Link color="foreground" href="#">
+          <Link color="foreground" href="comingsoon.html">
             Q & A
           </Link>
         </NavbarItem>
@@ -64,12 +64,12 @@ export default function Header() {
           </Link>
         </NavbarItem>
         <NavbarItem>
-          <Link href={"https://github.com"}>
-            <Icons.github className="h-6 w-6" />
+          <Link href={"https://twitter.com/EnhanceCode"}>
+            <Icons.twitter className="h-6 w-6" />
           </Link>
         </NavbarItem>
         <NavbarItem>
-          <Link href={"https://youtube.com"}>
+          <Link href={"https://www.youtube.com/@EnhanceCode"}>
             <Icons.youtube className="h-6 w-6 dark:fill-white" />
           </Link>
         </NavbarItem>

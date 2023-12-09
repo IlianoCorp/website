@@ -90,13 +90,17 @@ export default function Hero() {
               Let&apos;s elevate your coding journey together!
             </p>
             <div className="flex justify-center">
+            <a href="https://forms.gle/scGS1qcpSjo3cMpE9">
               <Button color="primary" className="dark:bg-zinc-200" radius="lg">
                 GET IN TOUCH
               </Button>
+              </a>
               <Spacer x={4} />
+              <a href="comingsoon.html">
               <Button variant="bordered" radius="lg">
                 VIEW ALL WORKS
               </Button>
+              </a>
             </div>
           </div>
         </div>
