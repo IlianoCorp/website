@@ -44,7 +44,7 @@ export default function Quote() {
         <div className=" top-[120px] w-[580px] flex flex-col items-start justify-center gap-[32px]">
           <div className="deck3">
             <motion.img
-              src="brucelee.png"
+              src="/images/brucelee.png"
               className="absolute rounded-2xl w-[0px] top-[-3rem] lg:w-auto "
               initial={{ opacity: 1, x: 0 }}
               animate="variants"

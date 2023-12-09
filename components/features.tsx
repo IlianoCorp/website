@@ -9,7 +9,7 @@ export default function Features() {
         <img
           className="opacity-90 w-[580px] h-[420px] sizecoin "
           alt=""
-          src="/images/coin.png"
+          src="/images/users.png"
         />
         {/*Feature 1*/}
         <div className="flex flex-col flex-wrap items-start justify-center ">
@@ -69,23 +69,23 @@ export default function Features() {
             >
               <span className=" whitespace-nowrap">
                 <span className=" text-transparent bg-gradient-to-t bg-clip-text from-zinc-500 dark:to-white to-black">
-                  The better the{" "}
+                  You heard it{" "}
                   <span className="bg-clip-text text-transparent bg-gradient-to-r from-red-500 to-yellow-400">
-                    website
+                    before
                   </span>{" "}
                 </span>
               </span>
               <br />
               <span className="text-transparent bg-gradient-to-t bg-clip-text from-zinc-500 dark:to-white to-black">
-                The more{" "}
+                Invest in{" "}
                 <span className="bg-clip-text text-transparent bg-gradient-to-r from-blue-500 to-teal-400">
-                  clients
+                  yourself
                 </span>{" "}
                 <br />
                 <span>
-                  The more{" "}
+                  Now is the{" "}
                   <span className="bg-clip-text text-transparent bg-gradient-to-r from-yellow-500 to-green-400">
-                    $$$
+                    time
                   </span>
                 </span>
               </span>
@@ -95,7 +95,7 @@ export default function Features() {
         <img
           className="oder mr-30 opacity-90 w-[580px] h-[420px] sizecoin"
           alt=""
-          src="/images/coin.png"
+          src="/images/invest.png"
         />
       </div>
       <img src="" alt="" />
